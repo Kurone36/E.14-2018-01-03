@@ -1,0 +1,8 @@
+kw1
+	INSERT INTO `ogloszenie` (`id`, `uzytkownik_id`, `kategoria`, `podkategoria`, `tytul`, `tresc`) VALUES (NULL, '1', '2', '0', 'Celine Dion', 'Sprzedam CD piosenkarki');
+kw2
+	SELECT tytul, tresc FROM `ogloszenie` WHERE kategoria = 1 AND podkategoria = 13 
+kw3
+	CREATE USER 'andrzej'@'localhost' IDENTIFIED VIA mysql_native_password USING 'xsw23';
+kw4
+	GRANT SELECT, ALTER ON ogloszenia.ogloszenie TO 'andrzej'@'localhost';
